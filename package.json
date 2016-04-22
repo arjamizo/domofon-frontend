@@ -4,8 +4,10 @@
   "description": "Front-end application for domofon-api",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --content-base src",
-    "build": "./node_modules/.bin/webpack --config webpack.config.js && cp src/index.html dist/index.html",
+    "build": "./node_modules/.bin/webpack",
+    "start": "./node_modules/.bin/webpack-dev-server --content-base dist",
+    "postinstall": "./node_modules/.bin/typings install",
+
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
