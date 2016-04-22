@@ -6,9 +6,7 @@
   "scripts": {
     "build": "./node_modules/.bin/webpack",
     "start": "./node_modules/.bin/webpack-dev-server --content-base dist",
-    "postinstall": "./node_modules/.bin/typings install",
-
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "postinstall": "./node_modules/.bin/typings install"
   },
   "repository": {
     "type": "git",
